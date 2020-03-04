@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- richiamo fontawesome -->
+    <script src="https://kit.fontawesome.com/15ec4d483d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <!-- richiamo il framework di bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- foglio di stile "normale" -->
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap Freelancer</title>
+  </head>
+
+    <body>
+      <!-- l'header contiene la navbar -->
+      <header>
+        <!-- componente bootstrap navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+
+            <!-- comportamento di alcuni elementi di navbar per gli schermi piccoli -->
+            <div class="schermoPiccolo">
+              <div class="row">
+                <div class="col-xs-2 col-sm-3 col-md-2">
+                  <a href="#"><img src="img/logoDigitalOcean.svg" alt=""> </a>
+                </div>
+                <div class="col-xs-10 col-sm-9 col-md-10">
+                    <input type="checkbox" id="menuAScomparsa">
+                    <!-- il for richiede un id -->
+                    <!-- Il tag label definisce un testo da associare ad un campo di un form HTML, in altre
+                    parole rende quel testo cliccabile come si cliccasse sul checkbox -->
+                    <label for="menuAScomparsa"><i class="fas fa-bars"></i></label>
+                    <div class="nascondino">
+                      <ul>
+                        <li><a href="#portfolio">	&nbsp;PORTFOLIO</a></li>
+                        <li><a href="#about">	&nbsp;ABOUT</a></li>
+                        <li><a href="#contactMe">	&nbsp;CONTACT</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="#portfolio">Docs</a></li>
+                        <li><a href="#about">Support</a></li>
+                        <li><a href="#contactMe">Login</a></li>
+                        <li><button type="button" name="button">Login</button> </li>
+                      </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- comportamento di alcuni elementi di navbar per gli schermi grandi -->
+            <div class="schermoGrande">
+              <div class="row">
+                <div class="col-md-2">
+                  <a href="#"><img src="img/logoDigitalOcean.svg" alt=""> </a>
+                </div>
+                <div class="col-md-4 col-md-offset-1">
+                  <ul>
+                    <li><a href="#portfolio">Products</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contactMe">CONTACT</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-4 col-md-offset-1">
+                  <ul>
+                    <li><a href="#portfolio">Docs</a></li>
+                    <li><a href="#about">Support</a></li>
+                    <li><a href="#contactMe">Login</a></li>
+                    <li><button type="button" name="button">Login</button> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </nav>
+      </header>
+
+      <!-- sezione startBootstrap -->
+      <section class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+
+            </div>
+          </div>
+        </div>
+
+      <!-- sezione Portfolio -->
+      </section>
+      <section id="portfolio">
+        <div class="container">
+          <div class="row">
+
+            </div>
+          </div>
+      </section>
+
+      <!-- sezione About -->
+      <section id="about">
+        <div class="container">
+          <div class="row">
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- sezione ContactMe -->
+      <section id="contactMe">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <!-- sezione Footer con 4 colonne -->
+        <section class="sezioniFooter">
+          <div class="container">
+            <div class="row">
+
+            </div>
+          </div>
+        </section>
+
+        <!-- sezione copyright del footer -->
+        <section class="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </footer>
+
+    </body>
+
+
+</html>
