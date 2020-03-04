@@ -12,7 +12,7 @@
   height: 66px;
   background-color: white;
   border-color: rgba(217, 230, 213, 0);
-  padding-bottom: 1rem;
+
 }
 
 /* gestisce logo nella navbar */
@@ -20,17 +20,6 @@
   width: 160px;
   padding-top: 19px;
   text-align: center;
-}
-
-.navbar ul{
-  padding-top: 19px;
-}
-
-/* gestisce elementi lista in navbar */
-.navbar ul li {
-  padding-top: 0.7rem;
-  display: inline-block;
-  font-size: 1.6rem;
 }
 
 /* quando faccio over sui li seleziona a e dagli il colore .navbar #0069ff; */
@@ -43,19 +32,56 @@
   color: #031b4e;
 }
 
-/* dà il colore alla scritta "menu" che compare quando si restringe il sito */
+.navbar button{
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  border: 1px solid #0069ff;
+  border-radius: 5px;
+  color: #0069ff;
+  font-weight: 700;
+}
+.navbar button:hover {
+  background-color: #0069ff;
+  color: #fff;
+  border-color: #0069ff;
+}
+
+/* Gestione elementi navbar quando si RESTRINGE il sito */
 .schermoPiccolo{
   text-align: right;
 }
 
+/* LABEL corrisponde al tasto del menu a scomparsa */
 .schermoPiccolo label {
-  background-color: #0069ff;
+  /* debug */
+  /* background-color: #0069ff; */
+  /* debug end */
+  color: #0069ff;
   padding: 21.24px 30px;
   margin-bottom: 0;
   display: inline-block;
   border-radius: 6px;
   font-size: 1.7rem;
 }
+
+/* Gestione elementi navbar quando si INGRANDISCE il sito */
+.schermoGrande ul{
+  padding-top: 19px;
+}
+
+/* gestisce elementi lista in navbar estesa */
+.schermoGrande ul li {
+  padding-top: 0.7rem;
+  display: inline-block;
+  font-size: 1.56rem;
+  margin-right: 15.5px;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+
 
 /* GESTISCE L'EFFETTO A SCOMPARSA DEL MENU A HAMBURGER SENZA JS */
 
@@ -73,9 +99,11 @@ input[type=checkbox]{
 input[type=checkbox]:checked ~ .nascondino{
     display: block;
     padding-top: 14px;
-    background-color: #2c3e50;
+    background-color: white;
+    text-align: center;
 }
 /* FINE EFFETTO A SCOMPARSA DEL MENU A HAMBURGER */
+
 
 /* FINE ELEMENTI NAVBAR */
 
@@ -86,13 +114,11 @@ body {
   padding-top: 66px;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
-h1, h3, li {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-}
 
 /* ******************************************************************* */
-/* ************************** SEZIONE START *************************+ */
+/* ************************** SEZIONE JUMBOTRON ********************** */
 /* ******************************************************************* */
+
 .jumbotron{
   background-image: url("img/bg-home-1-d54581d7.jpg");
   background-position: 50% 40%;
@@ -101,7 +127,7 @@ h1, h3, li {
   /* debug */
   /* margin-top: 55px; */
   /* fine debug */
-  height: 700px;
+  min-height: 700px;
 }
 
 /* ******************************************************************* */
@@ -283,30 +309,39 @@ e è dopo gli altri  altrimenti css sovrascriverebbe*/
     /* padding-top: 66px; */
   }
 
-/* INIZIO GESTIONE della scritta start bootstrap della navbar */
-  .navbar p {
-    padding-top: 1rem;
-  }
-
-  .navbar p a {
-    font-size: 1.9rem;
-  }
-/* FINE GESTIONE della scritta start bootstrap della navbar */
-
-  .navbar ul li {
-    padding-top: 1.3rem;
-    padding-bottom: 1.3rem;
-    display: inline-block;
-    font-size: 1.6rem;
-    margin-right: 3.8rem;
-  }
-
   .schermoGrande{
     display: none;
   }
 
-  .startBootstrap h1{
-    font-size: 4.4rem;
+  .navbar ul{
+    text-align: justify;
+    font-weight: 700;
+  }
+
+  .navbar .ulSopra{
+    display: inline-block;
+  }
+
+  .navbar .ulSopra li {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    font-size: 1.6rem;
+  }
+
+  .navbar .ulSotto{
+    display: inline-block;
+  }
+
+  .navbar .ulSotto li:last-child {
+    padding-top: 0.4rem;
+    padding-bottom: 1rem;
+  }
+
+  .navbar .ulSotto li {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    font-size: 1.6rem;
+    margin-left: 7rem;
   }
 
 }
@@ -315,28 +350,31 @@ e è dopo gli altri  altrimenti css sovrascriverebbe*/
   body {
     /* padding-top: 66px; */
   }
+  .schermoGrande{
+    display: none;
+  }
 
-  /* INIZIO GESTIONE della scritta start bootstrap della navbar */
-    .navbar p {
-      padding-top: 1rem;
-    }
-
-    .navbar p a {
-      font-size: 1.9rem;
-    }
-  /* FINE GESTIONE della scritta start bootstrap della navbar */
-
-  .navbar ul li {
+  .navbar ul{
+    text-align: justify;
+    font-weight: 700;
+  }
+  .navbar .ulSopra li {
     padding-top: 1.3rem;
     padding-bottom: 1.3rem;
     display: inline-block;
     font-size: 1.6rem;
-    margin-right: 3.8rem;
+    margin-left: 5rem;
   }
 
-  .schermoGrande{
-    display: none;
+  .navbar .ulSotto li {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-left: 5rem;
+    margin-right: 2.5rem;
   }
+
 
 }
 
