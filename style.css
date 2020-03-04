@@ -118,23 +118,25 @@ body {
 /* ************************** SEZIONE JUMBOTRON ********************** */
 /* ******************************************************************* */
 
-.jumbotron{
+.jumbotronMIO{
   background-image: url("img/bg-home-1-d54581d7.jpg");
-  background-position: 40% 27%;
+  background-position: 50% 40%;
   background-size: cover;
   color: white;
   /* debug */
   /* margin-top: 55px; */
   /* fine debug */
   /* min-height: 700px; */
+  padding-top: 5rem;
+  padding-bottom: 6rem;
 }
 
-.jumbotron h1 {
+.jumbotronMIO h1 {
   font-size: 62px;
   font-weight: 700;
 }
 
-.jumbotron .testoSottoJumbotron {
+.jumbotronMIO .testoSottoJumbotron {
   font-size: 2.4rem;
   color: rgba(255, 255, 255, 0.8)
 }
@@ -181,8 +183,11 @@ body {
   border-radius: 5px;
   color: white;
   font-weight: 700;
-
 }
+.inputJumbotron .createAccount:hover{
+  background-color: #1633ff;
+}
+
 /* bottone google in jumbotron */
 .inputJumbotron .google{
   width: 91.3%;
@@ -196,6 +201,10 @@ body {
   border-radius: 5px;
   color: rgba(0, 0, 0, 0.5);
   font-weight: 700;
+}
+
+.inputJumbotron .google:hover{
+  background-color: #f2f8ff;
 }
 
 /* gestisce il logo google dentro il bottone */
@@ -217,60 +226,62 @@ body {
 }
 
 /* ******************************************************************* */
-/* ************************** PORTFOLIO *************************+ */
+/* ************************** innovativeBusiness ********************+ */
 /* ******************************************************************* */
 
-#portfolio{
-  color: #2c3e50;
+.innovativeBusiness{
+  background-color: #f3f5f9;
   text-align: center;
-  padding-top: 7rem;
-  padding-bottom: 5.5rem;
+  padding-top: 4rem;
+  padding-bottom: 1.9rem;
 }
 
-#portfolio h1{
-  font-size: 4.8rem;
+.innovativeBusiness h4 {
+  color: rgba(3, 27, 78, 0.5);
+  font-size: 1.55rem;
+  font-weight: 700;
 }
 
-#portfolio img {
-  margin: auto;
-  width: 35rem;
-  margin-bottom: 4rem;
-  border-radius: 1rem;
+.innovativeBusiness p {
+  margin-top: 2rem;
 }
 
+.innovativeBusiness p i {
+  font-size: 1.2rem;
+}
+
+.innovativeBusiness p a{
+  color: #0069ff;
+  font-size: 1.55rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.immaginiSchermoGrande img {
+  display: inline-block;
+  max-height: 50%;
+  max-width: 14%;
+  margin-left: 2rem;
+}
+
+/* tolgo il margin left alla prima immagine per non decentralizzarle */
+.immaginiSchermoGrande img:first-child {
+  margin-left: 0rem;
+}
+
+/* nasconde le immagini che verranno mostrate a schermo piccolo */
+.immaginiSchermoPiccolo img {
+  display: none;
+}
 /* ******************************************************************* */
-/* ************************** ABOUT *************************+ */
+/* ************************** DEPLOY *************************+ */
 /* ******************************************************************* */
-#about{
-  background-color: #1abc9c;
+#deploy{
+  background-color: white;
   color: white;
   text-align: center;
   padding-top: 8rem;
   padding-bottom: 9.8rem;
-}
-#about h1{
-  font-size: 4.8rem;
-}
-
-#about p{
-  text-align: left;
-  font-size: 1.99rem;
-}
-
-#about button {
-  color: #f8f9fa;
-  background-color: #1abc9c;
-  margin-top: 2.5rem;
-  font-size: 2rem;
-  border: 2px solid #f8f9fa;
-  border-radius: 6px;
-  padding: 18px 28px;
-}
-
-#about button:hover {
-  color: #212529;
-  border-color: #f8f9fa;
-  background-color: #f8f9fa;
 }
 
 /* ******************************************************************* */
@@ -431,12 +442,32 @@ e è dopo gli altri  altrimenti css sovrascriverebbe*/
   }
 
   /* jumbotron */
-  .jumbotron h1 {
+  .jumbotronMIO h1 {
     font-size: 39px;
   }
 
-  .jumbotron .testoSottoJumbotron {
+  .jumbotronMIO .testoSottoJumbotron {
     font-size: 2.25rem;
+  }
+
+  .immaginiSchermoGrande{
+    display: none;
+  }
+
+  .immaginiSchermoPiccolo img {
+    display: inline-block;
+    max-width: 250px;
+    width: 40%;
+    margin-left: 3rem;
+  }
+
+  /* innovativeBusiness */
+  .innovativeBusiness h4 {
+    padding-bottom: 2rem;
+  }
+
+  .innovativeBusiness p {
+    margin-top: 4.8rem;
   }
 
 }
@@ -471,16 +502,26 @@ e è dopo gli altri  altrimenti css sovrascriverebbe*/
   }
 
   /* jumbotron */
-  .jumbotron h1 {
+  .jumbotronMIO{
+    padding-top: 6.1rem;
+    padding-bottom: 7.5rem;
+  }
+
+  .jumbotronMIO h1 {
     font-size: 38px;
   }
 
-  .jumbotron .testoSottoJumbotron {
+  .jumbotronMIO .testoSottoJumbotron {
     font-size: 2.3rem;
   }
 
   .quadratoBiancoJumbotron p{
     font-size: 1.2rem;
+  }
+
+  /* innovative business */
+  .innovativeBusiness p {
+    margin-top: 1rem;
   }
 
 }
@@ -491,11 +532,11 @@ e è dopo gli altri  altrimenti css sovrascriverebbe*/
   }
 
   /* jumbotron */
-  .jumbotron h1 {
+  .jumbotronMIO h1 {
     font-size: 50px;
   }
 
-  .jumbotron .testoSottoJumbotron {
+  .jumbotronMIO .testoSottoJumbotron {
     font-size: 2.4rem;
   }
 }
