@@ -114,6 +114,29 @@ body {
   font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pallinoBlue{
+  display: inline-block;
+  margin-right: 9px;
+  background-color: rgba(244, 105, 122, 0);
+  border: 2px solid #0069ff;
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+}
+
+.pallinoBlue:hover {
+  background-color:#0069ff;
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+}
+
 /* ******************************************************************* */
 /* ************************** SEZIONE JUMBOTRON ********************** */
 /* ******************************************************************* */
@@ -344,55 +367,183 @@ body {
 }
 
 /* ******************************************************************* */
-/* ************************** CONTACT ME *************************+ */
+/* ************************** Designed *************************+ */
 /* ******************************************************************* */
-#contactMe{
-  color:  #2c3e50;
+.designed{
+  color: rgba(3,27,78,.7);
   background-color: #f3f5f9;
   text-align: center;
-  padding-top: 7rem;
+  padding-top: 5.8rem;
+  padding-bottom: 7rem;
+}
+
+.designed h1 {
+  color: #031b4e;
+  font-weight: 700;
+}
+
+.designed .sottoTitoloDesign{
+  font-size: 2.35rem;
+  margin-top: 3rem;
+  margin-bottom: 3.72rem;
+}
+
+.designed .frecciaDesignedSX{
+  text-align: right;
+  padding-top: 60%;
+  font-size: 3.4rem;
+}
+
+.designed img{
+  height: auto;
+  width: 100%;
+}
+
+.designed .frecciaDesignedDX{
+  text-align: left;
+  padding-top: 60%;
+  font-size: 3.4rem;
+}
+.designed .testoSottoImmagineDesign{
+  font-size: 1.65rem;
+  width: 53%;
+  margin-left: 23.5%;
+  margin-top: 3rem;
+  margin-bottom: 3.72rem;
+}
+
+/* ******************************************************************* */
+/* ************************** Features *************************+ */
+/* ******************************************************************* */
+.features{
+  color: rgba(3,27,78,.7);
+  background-color: white;
+  text-align: center;
+  padding-top: 5.8rem;
+  padding-bottom: 7rem;
+}
+
+.features h1 {
+  color: #031b4e;
+  font-weight: 700;
+}
+
+.features h4 {
+  color: #031b4e;
+  font-weight: 700;
+  padding-top: 5%;
+}
+
+.features p{
+  font-size: 1.65rem;
+}
+
+.features a{
+  text-decoration: none;
+  font-weight: 700;
+  color: #0069ff;
+}
+.features a:hover{
+  color: #005fe6;
+}
+
+.predictable,
+.worldClass,
+.reliable{
+  text-align: left;
+  margin-top: 5rem;
+}
+
+/* ******************************************************************* */
+/* ************************** Development *************************+ */
+/* ******************************************************************* */
+.developement {
+  color: rgba(3,27,78,.7);
+  background-color: #f3f5f9;
+  text-align: center;
+  padding-top: 5.8rem;
+  padding-bottom: 7rem;
+}
+
+.developement h1 {
+  color: #031b4e;
+  font-weight: 700;
+  padding-bottom: 5%;
+}
+
+.developement .frecciaDevelopementSX{
+  text-align: right;
+  padding-top: 40%;
+  font-size: 3.4rem;
+}
+
+.developement img{
+  height: auto;
+  width: 100%;
+}
+
+.developement .frecciaDevelopementDX{
+  text-align: left;
+  padding-top: 40%;
+  font-size: 3.4rem;
+}
+
+/* ******************************************************************* */
+/* ************************** SERVE WORLD *************************+ */
+/* ******************************************************************* */
+.serveWorld{
+  color:  #2c3e50;
+  background-color: #031b4e;
+  background-image: url("img/data-center-map-20321538.svg");
+  background-position: 50% 50%;
+  background-size: cover;
+  text-align: center;
+  padding-top: 6rem;
   padding-bottom: 9rem;
 }
-#contactMe h1{
-  font-size: 4.5rem;
-}
-
-/* gestisce le caratteristiche dei form */
-#contactMe form input{
-  width: 64%;
-  line-height: 2;
-  border: none;
-  color: #495057;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
-  font-size: 2.5rem;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-  /* outline serve a togliere l'effetto "selezionato" ai form */
-  outline: none;
-}
-
-/* aggiunge più padding bottom ai messaggi */
-#contactMe form input:last-child{
-  padding-bottom: 15rem;
-}
-
-#contactMe button {
-  font-size: 2rem;
-  background-color: #1abc9c;
-  padding: 1.9rem 2.6rem;
-  margin-top: 2.5rem;
-  border-radius: 10px;
-  border: #1abc9c 1px solid;
+.serveWorld h1{
+  /* font-size: 4.5rem; */
+  font-weight: 700;
   color: white;
+  padding-bottom: 5rem;
 }
 
-#contactMe button:hover{
-  background-color: #159a80;
+/* gestione tabelle e elementi tabelle */
+.serveWorld table {
+  width: 100%;
 }
 
-#contactMe .posizioneBottone{
+.serveWorld tr{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.serveWorld tr:last-child{
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.serveWorld th{
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.serveWorld td{
   text-align: left;
-  margin-left: 18.8%;
+  color: rgba(255, 255, 255, 0.5)
+}
+
+.serveWorld table a{
+  float: right;
+  color: #00d7d2;
+}
+
+.serveWorld table a:hover{
+  color: #005fe6;
+  text-decoration: none;
+}
+
+.serveWorld table i{
+  font-size: 1rem;
 }
 
 /* ******************************************************************* */
@@ -531,10 +682,13 @@ e è dopo gli altri  altrimenti css sovrascriverebbe*/
   }
 
   /* deploy */
+  .deploy{
+    padding-bottom: 7rem;
+  }
+
   .clusterDeployment{
     margin-top: 1.7rem;
   }
-
 
   .optimized {
     margin-top: 0rem;
@@ -544,8 +698,46 @@ e è dopo gli altri  altrimenti css sovrascriverebbe*/
   .optimized,
   .oneClick,
   .globalAvaib{
-    min-height: 10px;
+    min-height: 0px;
   }
+ /* design */
+ .designed .frecciaDesignedSX{
+   text-align: right;
+   padding-top: 60%;
+   font-size: 2.4rem;
+ }
+
+ .designed .frecciaDesignedDX{
+   text-align: left;
+   padding-top: 60%;
+   font-size: 2.4rem;
+ }
+
+  /* features */
+  .predictable,
+  .worldClass,
+  .reliable{
+    margin-top: 2rem;
+  }
+
+  /* serveWorld */
+  .spaziaTabelle{
+    margin-top: 5rem;
+  }
+
+ /* developement */
+ .developement .frecciaDevelopementSX{
+   text-align: right;
+   padding-top: 40%;
+   font-size: 2.6rem;
+ }
+
+ .developement .frecciaDevelopementDX{
+   text-align: left;
+   padding-top: 40%;
+   font-size: 2.6rem;
+ }
+
 
 }
 
@@ -600,13 +792,49 @@ e è dopo gli altri  altrimenti css sovrascriverebbe*/
   .innovativeBusiness p {
     margin-top: 1rem;
   }
+
   /* deploy */
+  .deploy{
+    padding-bottom: 5.1rem;
+  }
+
   .clusterDeployment,
   .optimized,
   .oneClick,
   .globalAvaib{
     text-align: left;
     min-height: 250px;
+  }
+
+  /* design */
+  .designed .frecciaDesignedSX{
+    text-align: right;
+    padding-top: 60%;
+    font-size: 2.6rem;
+  }
+
+  .designed .frecciaDesignedDX{
+    text-align: left;
+    padding-top: 60%;
+    font-size: 2.6rem;
+  }
+
+  /* serveWorld */
+  .spaziaTabelle{
+    margin-top: 5rem;
+  }
+
+  /* developement */
+  .developement .frecciaDevelopementSX{
+    text-align: right;
+    padding-top: 40%;
+    font-size: 2.6rem;
+  }
+
+  .developement .frecciaDevelopementDX{
+    text-align: left;
+    padding-top: 40%;
+    font-size: 2.6rem;
   }
 }
 
