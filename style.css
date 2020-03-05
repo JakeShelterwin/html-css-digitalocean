@@ -199,7 +199,7 @@ body {
   border-right: 1.5px solid rgba(0, 0, 0, 0.09);
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.09);
   border-radius: 5px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.6);
   font-weight: 700;
 }
 
@@ -273,15 +273,74 @@ body {
 .immaginiSchermoPiccolo img {
   display: none;
 }
+
 /* ******************************************************************* */
 /* ************************** DEPLOY *************************+ */
 /* ******************************************************************* */
-#deploy{
+.deploy{
   background-color: white;
-  color: white;
+  color: rgba(3,27,78,.7);
   text-align: center;
-  padding-top: 8rem;
-  padding-bottom: 9.8rem;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+}
+
+.deploy h1 {
+  color: #031b4e;
+  font-weight: 700;
+}
+
+.deploy p{
+  font-size: 2.35rem;
+}
+
+/* gestione lista nella sezione deploy */
+.deploy ul {
+  text-align: left;
+  margin-top: 5.5rem;
+}
+
+.deploy ul li{
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 10px;
+  border-left: 2px solid #e5e8ed;
+  font-size: 2rem;
+}
+
+.deploy ul li:hover{
+  color: #031b4e;
+  border-left: 2px solid #0069ff;
+}
+
+/* gestione elementi nelle colonne di deploy */
+.clusterDeployment,
+.optimized,
+.oneClick,
+.globalAvaib{
+  text-align: left;
+  min-height: 180px;
+}
+.clusterDeployment,
+.optimized {
+  margin-top: 5.5rem;
+}
+
+.clusterDeployment h4,
+.optimized h4,
+.oneClick h4,
+.globalAvaib h4 {
+  color: #031b4e;
+  font-weight: 700;
+  margin-top: 1.8rem;
+}
+
+.clusterDeployment p,
+.optimized p,
+.oneClick p,
+.globalAvaib p {
+  margin-top: 0.2rem;
+  font-size: 1.60rem;
 }
 
 /* ******************************************************************* */
@@ -289,6 +348,7 @@ body {
 /* ******************************************************************* */
 #contactMe{
   color:  #2c3e50;
+  background-color: #f3f5f9;
   text-align: center;
   padding-top: 7rem;
   padding-bottom: 9rem;
@@ -470,6 +530,23 @@ e è dopo gli altri  altrimenti css sovrascriverebbe*/
     margin-top: 4.8rem;
   }
 
+  /* deploy */
+  .clusterDeployment{
+    margin-top: 1.7rem;
+  }
+
+
+  .optimized {
+    margin-top: 0rem;
+  }
+
+  .clusterDeployment,
+  .optimized,
+  .oneClick,
+  .globalAvaib{
+    min-height: 10px;
+  }
+
 }
 
 @media all and (min-width: 768px) and (max-width: 992px){
@@ -523,7 +600,14 @@ e è dopo gli altri  altrimenti css sovrascriverebbe*/
   .innovativeBusiness p {
     margin-top: 1rem;
   }
-
+  /* deploy */
+  .clusterDeployment,
+  .optimized,
+  .oneClick,
+  .globalAvaib{
+    text-align: left;
+    min-height: 250px;
+  }
 }
 
 @media all and (min-width: 993px) and (max-width: 1200px){
